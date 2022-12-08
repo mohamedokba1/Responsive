@@ -1,0 +1,9 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@mixin gradient-x($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+}
+
+@mixin gradient-y($start-color: $gray-700, $end-color: $gray-800, $start-percent: null, $end-percent: null) {
+    background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  }
